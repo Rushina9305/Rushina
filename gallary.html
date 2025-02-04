@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link  rel="stylesheet" href="css/lightbox.min.css" type="text/css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Icon link -->
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/lightbox-plus-jquery.min.js"></script>
+
+
+  <style>
+      .gallery
+      {
+          margin:10px 50px;
+      }
+      .gallery img{
+          transition:1s;
+          padding:15px;
+          width:200px;
+      }
+      .gallery img:hover{
+          filter:grayscale(100%);
+          transform:scale(1.1);
+      }
+        
+.nav-link
+        {
+             color:white!important;
+        }
+        .dropdwnMenuButton
+        {
+             color:white !important;
+        }
+        .add
+{
+       text-align:center;
+       margin-top: -10px;
+       color:navy;
+       font-size:20px;
+}
+#dv1
+      {
+        height: 50px;
+        width: 50px;
+      /*   border: 1px solid white; */
+        border-radius: 50%;
+        margin-left: 5px;
+        float: left;
+
+
+      }
+      #dv2
+      {
+        height: 50px;
+        width: 50px;
+      /*   border: 1px solid white; */
+        margin-left: 5px;
+        border-radius: 50%;
+        float: left;
+
+      }
+      #dv3
+      {
+        height: 50px;
+        width: 50px;
+       /*  border: 1px solid white; */
+        border-radius: 50%;
+        float: left;
+        margin-left: 5px;
+
+
+      }
+      #dv4
+      {
+        height: 50px;
+        width: 50px;
+       /*  border: 1px solid white; */
+        border-radius: 50%;
+        margin-left: 5px;
+      
+
+        float: left;
+
+      }
+
+
+
+  </style>
+</head>
+  <body style="background-color:white;">
+    <div class="container-fluid" style="margin: 0px;padding: 0px;">
+    <!-- header-->
+     <div class="row header bg-white" style="min-height:100px">
+     <div class="col-sm-3 logo" style="margin:0px;padding:0px;">
+      <img src="images/logo.png" width="100%" height="110px" />
+      </div>
+     <div class="col-sm-9 sitename text-center" style="font-size:65px;font-weight:bold;padding-top:25px;color:Navy;margin:-35px;">
+           <i>Uruguay</i><span style="color:green;">Natural</span>
+           <h3 class="add">Ministerio de Turisumo</h3>
+     </div>
+      </div>
+     <!--menu-->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand nav-link" href="#">Natural</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              
+                <li class="dropdown">
+                  <button class="btn btn-darkdropdown-toggle" href="contact.html" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About Us
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="services.html">Services</a>
+                    <a class="dropdown-item" href="gallary.html">Gallary</a>
+                    <a class="dropdown-item" href="our courses.html">Our courses</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact  Us</a>
+                  </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav> 
+      <!--menu end-->
+
+      <section id="call-to-action" class="wow fadeIn" style="visibility: visible; padding-top:100px; padding-bottom:20px; animation-name: fadeIn;">
+        <div class="container text-center">
+          <h1 style="color:navy;text-weight:bold;font-size:45px;">Images<span style="color:green;">Gallary</span>
+          </h1><hr/>
+        </div>
+      </section>
+      
+      <div class="gallery">
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="images/people1.jpg"   data-lightbox="mygallery" data-title="People1"><img src="images/people1.jpg"/></a>
+            </div>
+            <div class="col-sm-3">
+            <a href="images/people2.jpg" data-lightbox="mygallery" data-title="People2"><img src="images/people2.jpg"/></a>
+            </div>
+            <div class="col-sm-3">
+            <a href="images/people3.jpg" data-lightbox="mygallery" data-title="People3"><img src="images/people3.jpg"/></a>
+            </div>
+            <div class="col-sm-3">
+            <a href="images/nature.jpg" data-lightbox="mygallery" data-title="nature"><img src="images/nature.jpg"/></a>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+            <a href="images/cars1.jpg" data-lightbox="mygallery" data-title="cars1"><img src="images/cars1.jpg"/></a>
+            </div>
+            <div class="col-sm-3">
+            <a href="images/cars2.jpg" data-lightbox="mygallery" data-title="cars2"><img src="images/cars2.jpg"/></a>
+            </div>
+            <div class="col-sm-3">
+            <a href="images/cars3.jpg" data-lightbox="mygallery" data-title="cars3"><img src="images/cars3.jpg"/></a>
+            </div>
+            <div class="col-sm-3">
+            <a href="images/cars4.jpg" data-lightbox="mygallery" data-title="cars4"><img src="images/cars4.jpg"/></a>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+            <a href="images/team1.jpg" data-lightbox="mygallery" data-title="team1"><img src="images/team1.jpg"/></a>
+            </div>
+            <div class="col-sm-3">
+            <a href="images/team2.jpg" data-lightbox="mygallery" data-title="team2"><img src="images/team2.jpg"/></a>
+            </div>
+            <div class="col-sm-3">
+            <a href="images/team3.jpg" data-lightbox="mygallery" data-title="team3"><img src="images/team3.jpg"/></a>
+            </div>
+            <div class="col-sm-3">
+                <a href="images/mountains.jpg" data-lightbox="mygallery" data-title="mountains"><img src="images/mountains.jpg"/></a>
+       </div>
+       </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 bg-white">
+
+        </div>
+      </div>
+
+       <!-- footer start-->
+<div class="row" style="height:350px;width:100%;background-color:rgba(0, 0, 0, 0.8);margin:0px;padding:0px;">
+  <div class="col-sm-4" style="border-right:0px ;">
+    <h1 style="margin:10px;padding:10px;text-weight:bold;color:green;"><b>About Us</b></h1><hr/>
+    <h3 style="color:silver;margin:5px;padding:0px;text-align:justify;font-size:15px;"> 
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, 
+      incidunt et ea quo dolore laudantium consectetur!Among the many ways that “unnatural” content gets targeted by Google’s algorithm is 
+      through the determination of content “thinness”.In fact, in January of 2016, it was announced that spam-fighting Panda was now integrated as
+       a core part of Google’s ranking algorithm.</h3>
+    <br>
+    <h5 style="text-align:center;font-size:15px;color:white;">Copyright &copy;2021 | All right reserved KSS Chitrakoot</h5>
+
+  </div>
+  <div class="col-sm-4" style="border-right:0px;text-weight:bold;">
+    <h1 style="color:green;margin:10px;padding:10px;"><b>Image Gallery</b></h1><hr/>
+    <p style= "color:silver;text-align:center;font-size:18px;">
+    <i>Blue Pond Image</i>
+    </p>
+    <hr/>
+    <p style= "color:silver;text-align:center;font-size:18px;">
+    <i>Forest Image</i>
+    </p>
+    <hr/>
+    <p style= "color:silver;text-align:center;font-size:18px;">
+    <i>Earth Image</1>
+    </p>
+    <hr/>
+    <p style= "color:silver;text-align:center;font-size:18px;">
+    <i>Natural Image</i>
+
+    </p>
+
+  </div>
+  <div class="col-sm-4" style="border-right:0px;">
+    <h1 style="color:green;margin:10px;padding:10px;"><b>Contact Us</b></h1><hr/>
+    <p style="color:red;"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>&nbsp; <b>Email:</b>-tansleyrushina2001@gmail.com<br></p>
+  <p style="color:red;"><i class="fa fa-phone fa-fw" aria-hidden="true"></i></i>&nbsp; <b>Phone:</b>-+91    9305782376<br></p>
+<p style="color:red;"><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i></i>&nbsp;<b> Location:</b>- Sitapur,KSS Chitrakoot UP<br></p>
+  <div class="row">
+    <div class="col-sm-12 " style="min-height:50px;padding-top:60px">
+     
+     <div id="dv1">
+<a href="https://www.facebook.com/"> <img src="images/facebook.png" height="100%" width="100%"> </a>
+     </div>
+     <div id="dv2"><a href="https://www.instagram.com/" target="_blank "> 
+      <img src="images/insta.png" height="100%" width="100%"> </a>
+    </div>
+     <div id="dv3">
+       <a href="https://web.whatsapp.com/"> <img src="images/wp.png" height="100%" width="100%"> </a>
+     </div>
+     <div id="dv4">
+       <a href="https://twitter.com/"> <img src="images/tw.png" height="100%" width="100%"> </a>
+     </div>
+     
+     
+    </div>
+  </div>
+  
+ </div>
+</div>
+    
+</body>
+</html>
+
+
+
+  
+
