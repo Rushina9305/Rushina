@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Icon link -->
+  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Libraries CSS Files -->
+  <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/animate/animate.min.css" rel="stylesheet">
+  <link href="css/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="cssContowlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- JavaScript Libraries -->
+  <script src="js/jquery/jquery.min.js"></script>
+  <script src="js/jquery/jquery-migrate.min.js"></script>
+  <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="jseasing/easing.min.js"></script>
+  <script src="js/superfish/hoverIntent.js"></script>
+  <script src="js/superfish/superfish.min.js"></script>
+  <script src="js/wow/wow.min.js"></script>
+  <script src="js/waypoints/waypoints.min.js"></script>
+  <script src="js/counterup/counterup.min.js"></script>
+  <script src="js/owlcarousel/owl.carousel.min.js"></script>
+  <script src="js/isotope/isotope.pkgd.min.js"></script>
+  <script src="js/lightbox/js/lightbox.min.js"></script>
+  <script src="js/touchSwipe/jquery.touchSwipe.min.js"></script>
+
+<style>
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+    
+.nav-link
+        {
+             color:white!important;
+        }
+        .dropdwnMenuButton
+        {
+             color:white !important;
+        }
+        .add
+{
+       text-align:center;
+       margin-top: -10px;
+       color:navy;
+       font-size:20px;
+}
+#dv1
+      {
+        height: 50px;
+        width: 50px;
+      /*   border: 1px solid white; */
+        border-radius: 50%;
+        margin-left: 5px;
+        float: left;
+
+
+      }
+      #dv2
+      {
+        height: 50px;
+        width: 50px;
+      /*   border: 1px solid white; */
+        margin-left: 5px;
+        border-radius: 50%;
+        float: left;
+
+      }
+      #dv3
+      {
+        height: 50px;
+        width: 50px;
+       /*  border: 1px solid white; */
+        border-radius: 50%;
+        float: left;
+        margin-left: 5px;
+
+
+      }
+      #dv4
+      {
+        height: 50px;
+        width: 50px;
+       /*  border: 1px solid white; */
+        border-radius: 50%;
+        margin-left: 5px;
+      
+
+        float: left;
+
+      }
+</style>
+    <body style="background-color:white;">
+        <div class="container-fluid" style="margin: 0px;padding: 0px;">
+        <!-- header-->
+         <div class="row header bg-white" style="min-height:100px">
+         <div class="col-sm-3 logo" style="margin:0px;padding:0px;">
+          <img src="images/logo.png" width="100%" height="110px" />
+          </div>
+         <div class="col-sm-9 sitename text-center" style="font-size:65px;font-weight:bold;padding-top:25px;color:Navy;margin:-35px;">
+               <i>Uruguay</i><span style="color:green;">Natural</span>
+               <h3 class="add">Ministerio de Turisumo</h3>
+         </div>
+          </div>
+         <!--menu-->
+         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand nav-link" href="#">Natural</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  
+                    <li class="dropdown">
+                      <button class="btn btn-darkdropdown-toggle" href="contact.html" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      About Us
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="services.html">Services</a>
+                        <a class="dropdown-item" href="gallary.html">Gallary</a>
+                        <a class="dropdown-item" href="our courses.html">Our courses</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact  Us</a>
+                      </li>
+    
+                    <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav> 
+          <!--menu end-->
+
+               
+<section id="call-to-action" class="wow fadeIn" style="visibility: visible; padding-top:100px; padding-bottom:20px; animation-name: fadeIn;">
+  <div class="container text-center">
+    <h1 style="color:navy;text-weight:bold;font-size:45px;">Images<span style="color:green;">Gallary</span>
+    </h1><hr/>
+  </div>
+</section>
+    
+
+<div class="row">
+  <div class="column" id="col-sm-3">
+    <img src="images/people1.jpg" style="width:100%;height:200px;margin:10px;padding:10px;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column" id="col-sm-3">
+    <img src="images/people2.jpg" style="width:100%;height:200px;margin:10px;padding:10px;" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column" id="col-sm-3">
+    <img src="images/people3.jpg" style="width:100%;height:200px;margin:10px;padding:10px;" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column" id="col-sm-3">
+    <img src="images/jungle.jpg" style="width:100%;height:200px;margin:10px;padding:10px;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  </div>
+  <div class="row">
+  <div class="column" id="col-sm-3">
+    <img src="images/cars1.jpg" style="width:100%;height:200px;margin:10px;padding:10px;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column" id="col-sm-3">
+    <img src="images/cars2.jpg" style="width:100%;height:200px;margin:10px;padding:10px;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column" id="col-sm-3">
+    <img src="images/cars3.jpg" style="width:100%;height:200px;margin:10px;padding:10px;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column" id="col-sm-3">
+    <img src="images/cars4.jpg" style="width:100%;height:200px;margin:10px;padding:10px;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  </div>
+  <div class="row">
+  <div class="column" id="col-sm-3">
+    <img src="images/team1.jpg" style="width:100%;height:200px;margin:10px;padding:10px;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column" id="col-sm-3">
+    <img src="images/team2.jpg" style="width:100%;height:200px;margin:10px;padding:10px;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column" id="col-sm-3">
+    <img src="images/team3.jpg" style="width:100%;height:200px;margin:10px;padding:10px;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column" id="col-sm-3">
+    <img src="images/nature.jpg" style="width:100%;height:200px;margin:10px;padding:10px;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+              
+   </div>
+   </div>
+   <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 12</div>
+        <img src="images/people1.jpg" style="width:100%;height:400px;">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 12</div>
+        <img src="images/people2.jpg" style="width:100%;height:400px;">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 12</div>
+        <img src="images/people3.jpg" style="width:100%;height:400px;">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">4 / 12</div>
+        <img src="images/jungle.jpg" style="width:100%;height:400px;">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">5 / 12</div>
+        <img src="images/cars1.jpg" style="width:100%;height:400px;">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">6 / 12</div>
+        <img src="images/cars2.jpg" style="width:100%;height:400px;">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">7 / 12</div>
+        <img src="images/cars3.jpg" style="width:100%;height:400px;">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">8/ 12</div>
+        <img src="images/cars4.jpg" style="width:100%;height:400px;">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">9 / 12</div>
+        <img src="images/team1.jpg" style="width:100%;height:400px;">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">10/ 12</div>
+        <img src="images/team2.jpg" style="width:100%;height:400px;">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">11 / 12</div>
+        <img src="images/team3.jpg" style="width:100%;height:400px;">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">12 / 12</div>
+        <img src="images/nature.jpg" style="width:100%;height:400px;">
+      </div>
+      
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+  
+      
+    </div>
+  </div>
+  
+  <script>
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+  
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+  
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+
+
+
+
+<!-- footer start-->
+<div class="row" style="height:350px;width:100%;background-color:rgba(0, 0, 0, 0.8);margin:0px;padding:0px;">
+  <div class="col-sm-4" style="border-right:0px ;">
+    <h1 style="margin:10px;padding:10px;text-weight:bold;color:green;"><b>About Us</b></h1><hr/>
+    <h3 style="color:silver;margin:5px;padding:0px;text-align:justify;font-size:15px;"> 
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, 
+      incidunt et ea quo dolore laudantium consectetur!Among the many ways that “unnatural” content gets targeted by Google’s algorithm is 
+      through the determination of content “thinness”.In fact, in January of 2016, it was announced that spam-fighting Panda was now integrated as
+       a core part of Google’s ranking algorithm.</h3>
+    <br>
+    <h5 style="text-align:center;font-size:15px;color:white;">Copyright &copy;2021 | All right reserved KSS Chitrakoot</h5>
+
+  </div>
+  <div class="col-sm-4" style="border-right:0px;text-weight:bold;">
+    <h1 style="color:green;margin:10px;padding:10px;"><b>Image Gallery</b></h1><hr/>
+    <p style= "color:silver;text-align:center;font-size:18px;">
+    <i>Blue Pond Image</i>
+    </p>
+    <hr/>
+    <p style= "color:silver;text-align:center;font-size:18px;">
+    <i>Forest Image</i>
+    </p>
+    <hr/>
+    <p style= "color:silver;text-align:center;font-size:18px;">
+    <i>Earth Image</1>
+    </p>
+    <hr/>
+    <p style= "color:silver;text-align:center;font-size:18px;">
+    <i>Natural Image</i>
+
+    </p>
+
+  </div>
+  <div class="col-sm-4" style="border-right:0px;">
+    <h1 style="color:green;margin:10px;padding:10px;"><b>Contact Us</b></h1><hr/>
+    <p style="color:red;"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>&nbsp; <b>Email:</b>-tansleyrushina2001@gmail.com<br></p>
+  <p style="color:red;"><i class="fa fa-phone fa-fw" aria-hidden="true"></i></i>&nbsp; <b>Phone:</b>-+91    9305782376<br></p>
+<p style="color:red;"><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i></i>&nbsp;<b> Location:</b>- Sitapur,KSS Chitrakoot UP<br></p>
+  <div class="row">
+    <div class="col-sm-12 " style="min-height:50px;padding-top:60px">
+     
+     <div id="dv1">
+<a href="https://www.facebook.com/"> <img src="images/facebook.png" height="100%" width="100%"> </a>
+     </div>
+     <div id="dv2"><a href="https://www.instagram.com/" target="_blank "> 
+      <img src="images/insta.png" height="100%" width="100%"> </a>
+    </div>
+     <div id="dv3">
+       <a href="https://web.whatsapp.com/"> <img src="images/wp.png" height="100%" width="100%"> </a>
+     </div>
+     <div id="dv4">
+       <a href="https://twitter.com/"> <img src="images/tw.png" height="100%" width="100%"> </a>
+     </div>
+     
+     
+    </div>
+  </div>
+  
+ </div>
+</div>
+    
+</body>
+</html>
+
+
+
+  
+
